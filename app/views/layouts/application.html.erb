@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TweetApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("RailsCampBlog", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("トップ", "/") %>
+        </li>
+        <li>
+          <%= link_to("新規登録", "/user/sign_up") %>
+        </li>
+        <li>
+          <%= link_to("ログイン", "/user/sign_in") %>
+        </li>
+      </ul>
+    </header>
+
+
+    <%= yield %>
+  </body>
+</html>

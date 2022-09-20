@@ -1,0 +1,15 @@
+<div class="form-heading">Sign up</div>
+    <div class="form users-form">
+      <div class="form-body">
+        <%= form_tag("/users/create") do %>
+          <p>Email</p>
+          <input name="name" >
+          <p>Password (6 characters minimum)</p>
+					<input name="name" >
+          <p>Password confirmation</p>
+          <input name="email" >
+          <input type="submit" value="Sign up">
+        <% end %>
+				<%= link_to("Log in", "/user/sign_in") %>
+      </div>
+    </div>
